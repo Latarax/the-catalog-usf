@@ -1,0 +1,93 @@
+{% load static %}
+<!doctype html>
+<html lang = "en">
+<meta charset = "utf-8">
+<title>Library sourcepage</title>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="{% static 'catalog/style.css' %}">
+	
+</head>
+
+<body id="showcase">
+		<img class="logo" src="{% static 'catalog/logo1.png' %}">
+		<span style="font-family:Courier; color: white;font-size:48px;">catalog Library &trade;</span>
+		<p style="color:white; font-size: 18px; font-family: arial narrow; text-indent: 200px;">A Place Vibrating With Ideas
+<ul>
+			<li> <a href="{% url 'catalog-home' %}"> Home</a></li>
+			<li> <a href="{% url 'catalog-about' %}"> About</a>
+				<ul>
+					<li><a href="https://www.usf.edu/" >Campus</a></li>
+					<li><a href="{% url 'catalog-mission' %}">Mission</a></li>
+				</ul>
+			</li>
+			<li> <a href="{% url 'catalog-booklist' %}"> Available Books</a></li>
+			<li> <a href=""> Contact Us</a></li>
+			<li> <a href="{% url 'catalog-register' %}" target="_blank"> Register</a></li>
+</ul>
+<br>
+<br>
+<h2 style ="font-family: Verdana; color: white;">Welcome</h2>
+<p style ="font-family: Verdana; font-size: 15pt; color: white;">
+Catalog Library Database provides the latest books available to <br>University Of South Florida students.
+Affordable plans and leasing option available <br> on all college books, Novel and Short Stories by your favorite authors. <br>
+
+<br>
+IF THAT WASN'T ENOUGH, CATALOG IS NOW OFFERING FREE RECOMMENDATIONS <br>AND BEST SELLERS ON SUBSCRIPTION BASES <BR>
+
+</p>
+<p style="color: white;"><em><strong>Heres whats to offer...</strong></em></p>
+<br>
+<div>
+	<h1 style ="color: white; font-size: 24px;">Services Offered</h1>
+	<ol style ="color: white; font-size: 18px;">
+		<li>Starbucks and Gloria Jean's 	1st Floor</li>
+		<li>Book Rooms 						2 - 4 Floor</li>
+		<li>Think Tanks 					5th Floor</li>
+		<li>Computer Labs 					6th Floor</li>
+		<li>Chemistry Labs 					6th Floor</li>
+		<li>Physics Labs 					6th Floor</li>
+		<li>Radio Labs 					6th Floor</li>
+		<li>Online Check Out</li>
+	</ol>
+	</div>
+<section>
+ <div class="slidershow middle2">
+
+      <div class="slides">
+        <input type="radio" name="r" id="r1" checked>
+        <input type="radio" name="r" id="r2">
+        <input type="radio" name="r" id="r3">
+        <input type="radio" name="r" id="r4">
+        <input type="radio" name="r" id="r5">
+        <div class="slide s1">
+          <img src="{% static 'catalog/1.jpg' %}" alt="">
+        </div>
+        <div class="slide">
+          <img src="{% static 'catalog/2.jpg' %}" alt="">
+        </div>
+        <div class="slide">
+          <img src="{% static 'catalog/3.jpg' %}" alt="">
+        </div>
+        <div class="slide">
+          <img src="{% static 'catalog/4.jpg' %}" alt="">
+        </div>
+        <div class="slide">
+          <img src="{% static 'catalog/5.jpeg' %}" alt="">
+        </div>
+      </div>
+
+      <div class="navigation">
+        <label for="r1" class="bar"></label>
+        <label for="r2" class="bar"></label>
+        <label for="r3" class="bar"></label>
+        <label for="r4" class="bar"></label>
+        <label for="r5" class="bar"></label>
+		
+      </div>
+    </div>
+</section>
+	
+</body>
+
+</html>
