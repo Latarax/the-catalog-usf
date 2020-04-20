@@ -25,7 +25,7 @@ SECRET_KEY = 'rt61_^3bz(+2zvq&r6*4zwopwa0@_py^_%!hw-4yml_@79itc0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['evening-reef-73152.herokuapp.com']
 
 
 # Application definition
