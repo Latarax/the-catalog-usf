@@ -84,6 +84,7 @@ def register(request):
                 context ={'username':username, 'password':password, 'firstname':firstname, 'lastname':lastname, 'city':city}
 
                 global curruser
+                curruser = ''
                 curruser = username
                 #print(curruser)
 
