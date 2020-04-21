@@ -7,6 +7,16 @@
 <h1 style= "color: white;"><center>Available Books</center> </h1>
 
 <body id="showcase">
+		<form method="POST", action="">
+			{% csrf_token %}
+			<input type = "text" list = "test" name="test" placeholder=""> 
+			<datalist id = "test">
+				{% for record in records %}
+					<option>{{ record.1 }}</option>    
+				{% endfor %}
+			</datalist>
+			<input type = "submit" value = "Submit">
+		</form>
 	<table style="color:white; margin: 0px;padding: 0px;width: 800px;height: 400px;">
 		<tr>
 			<th>User Name</th>

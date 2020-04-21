@@ -1,0 +1,38 @@
+{% load static %}
+<!doctype html>
+<html lang = "en">
+<head>
+        <link rel="stylesheet" type="text/css" href="{% static 'catalog/style.css' %}">
+</head>
+<body id="showcase">
+<div style="z-index: 10;">
+    <ul>
+        <li> <a href="{% url 'catalog-home' %}"> Home</a></li>
+        <li> <a href="{% url 'catalog-about' %}"> About</a>
+            <ul>
+                <li><a href="https://www.usf.edu/" >Campus</a></li>
+                <li><a href="{% url 'catalog-mission' %}">Mission</a></li>
+            </ul>
+        </li>
+        <li> <a href="{% url 'catalog-booklist' %}"> Available Books</a><li>
+        
+    </ul>
+</div>
+    <table style="color:white;padding: 0px;width: 75%; height: 50%; text-align: left;">
+            <tr>
+                <th>User Name</th>
+                <th>Original Owner</th>
+                <th>Title</th>
+                <th>Author</th>
+            </tr>
+            {% for record in records %}
+                <tr>
+                    <th>{{ record.0 }}</th>
+                    <th>{{ record.1 }}</th>
+                    <th>{{ record.2 }}</th>
+                    <th>{{ record.3 }}</th>
+                </tr>
+            {% endfor %}
+    </table>
+</body>
+</html>

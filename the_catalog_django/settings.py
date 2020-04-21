@@ -34,6 +34,7 @@ ALLOWED_HOSTS = ['evening-reef-73152.herokuapp.com',
 
 INSTALLED_APPS = [
     'catalog.apps.CatalogConfig',
+    'crispy_forms',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -124,3 +125,5 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
